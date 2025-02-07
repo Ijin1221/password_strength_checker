@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Stregth Checker</title>
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1592/1592485.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="app_div ">
+      <h1>Evaluate Your Password</h1>
+      <input type="text" placeholder="Enter Your Password" class="passwordInput" id="inputPassword"
+        oninput="checkStrength()">
+      <div class="buttonDiv">
+        <button class="check">Check Password Strength</button>
+        <button class="clear" onclick="ClearField()">Clear</button>
+      </div>
+      <div id="strength"></div>
+      <h3 id="strengthResult">&nbsp;</h3>
+      <p class="Warning">A strong password must be at least 8 characters long and include a number, a special character,
+        an uppercase letter, and a lowercase letter.</p>
+    </div>
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
